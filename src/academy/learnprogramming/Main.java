@@ -3,13 +3,25 @@ package academy.learnprogramming;
 import problems.*;
 
 import java.text.DecimalFormat;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-//        calcFeetAndInchesToCM(157);
-        System.out.println(SecondsMinutes.getDurationString(-20, 10));
-        System.out.println(SecondsMinutes.getDurationString(3600));
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your name: ");
+        String name = scanner.nextLine();
+        System.out.println("Enter Your year of birth:");
+        boolean hasNextInt = scanner.hasNextInt();
+        while (!hasNextInt){
+            System.out.println("please enter your year");
+            scanner.nextLine();
+            hasNextInt = scanner.hasNextInt();
+        }
+        int dob = scanner.nextInt();
+        scanner.close();
+        System.out.println("Your's name is "+name+" and age is "+(2021-dob));
     }
+
 
     public static double calcFeetAndInchesToCM(double feet, double inches) {
         double ftToCM = 30.48;
