@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Department {
-    private String name;
-    private List<Employees> employeesList;
+    private final String name;
+    private final List<Employees> employeesList;
 
     public Department(String name) {
         this.name = name;

@@ -20,7 +20,7 @@ public class ValidTree {
             json.get(i.get(0)).add(i.get(1));
             json.get(i.get(1)).add(i.get(0));
         }
-        boolean result = dfs(0,-1) ? n == visit.size(): false;
+        boolean result = dfs(0, -1) && n == visit.size();
         System.out.println(result);
     }
 
@@ -37,7 +37,7 @@ public class ValidTree {
                     return false;
                 }
             }
-        };
-        return true;
+        }
+      return true;
     }
 }

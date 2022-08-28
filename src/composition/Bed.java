@@ -1,11 +1,11 @@
 package composition;
 
 public class Bed {
-    private String style;
-    private int pillows;
-    private int height;
-    private int quilt;
-    private int sheets;
+    private final String style;
+    private final int pillows;
+    private final int height;
+    private final int quilt;
+    private final int sheets;
 
     public Bed(String style, int pillows, int height, int quilt, int sheets) {
         this.style = style;

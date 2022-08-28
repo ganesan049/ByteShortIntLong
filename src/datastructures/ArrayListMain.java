@@ -3,7 +3,7 @@ package datastructures;
 import java.util.ArrayList;
 
 class GroceryList{
-    private ArrayList<String> groceryList = new ArrayList<String>();
+    private final ArrayList<String> groceryList = new ArrayList<String>();
     public void addGroceryItems(String items){
         groceryList.add(items);
     }

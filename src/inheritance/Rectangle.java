@@ -1,8 +1,8 @@
 package inheritance;
 
 public class Rectangle {
-    private double width;
-    private double length;
+    private final double width;
+    private final double length;
 
     public Rectangle(double width, double length) {
         if(width < 0){

@@ -1,8 +1,8 @@
 package composition;
 
 public class Ceiling {
-    private int height;
-    private int paintedColor;
+    private final int height;
+    private final int paintedColor;
 
     public int getHeight() {
         return height;

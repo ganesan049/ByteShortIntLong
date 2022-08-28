@@ -6,9 +6,6 @@ public class TeenNumberChecker {
     }
 
     public static boolean isTeen(int n1) {
-        if (n1 >= 13 && n1 <= 19) {
-            return true;
-        }
-        return false;
+      return n1 >= 13 && n1 <= 19;
     }
 }

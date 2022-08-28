@@ -3,8 +3,8 @@ package banking;
 import java.util.ArrayList;
 
 public class Branch {
-    private ArrayList<Customer> customer;
-    private String name;
+    private final ArrayList<Customer> customer;
+    private final String name;
 
     public Branch(String name){
         this.name = name;

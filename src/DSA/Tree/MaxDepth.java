@@ -6,12 +6,12 @@ public class MaxDepth {
     static Node root;
     public static void main(String[] args) {
         MaxDepth tree = new MaxDepth();
-        tree.root = new Node(1);
-        tree.root.left = new Node(22);
+        root = new Node(1);
+        root.left = new Node(22);
         MaxDepth tree2 = new MaxDepth();
-        tree2.root = new Node(1);
-        tree2.root.right = new Node(3);
-        boolean res = isSameTree(tree.root,tree2.root);
+        root = new Node(1);
+        root.right = new Node(3);
+        boolean res = isSameTree(root, root);
         System.out.println(res);
 //        tree.BFS(tree.root);
 //        System.out.println("Height of tree is : " +

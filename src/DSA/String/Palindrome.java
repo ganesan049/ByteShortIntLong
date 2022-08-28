@@ -38,7 +38,7 @@ public class Palindrome {
         System.out.println(res);
         String result =
 //                String.join("",res);
-                res.stream().map(i -> i.toString()).collect(Collectors.joining(""));
+                res.stream().map(i -> i).collect(Collectors.joining(""));
         System.out.println(result);
     }
 

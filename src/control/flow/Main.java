@@ -110,7 +110,7 @@ public class Main {
                         System.out.print(" ");
                     }
                 }
-                System.out.println("");
+                System.out.println();
             }
         }
     }
@@ -153,10 +153,7 @@ public class Main {
             }
             smallCount--;
         }
-        if(count == goal){
-            return true;
-        }
-        return false;
+        return count == goal;
     }
     public static void numberToWords(int number){
         if(number<0){
@@ -225,7 +222,7 @@ public class Main {
     }
     public static int reverse(int number){
         int reverseNumber = 0;
-        boolean isNegative = number >= 0 ? false:true;
+        boolean isNegative = number < 0;
         number = Math.abs(number);
         while (number > 0){
             reverseNumber*=10;
@@ -248,10 +245,7 @@ public class Main {
                 sum+=i;
             }
         }
-        if(sum == n){
-            return true;
-        }
-        return false;
+        return sum == n;
     }
     public static void printFactors(int n){
         if(n<1){
@@ -279,10 +273,7 @@ public class Main {
         return gcd;
     }
     public static boolean isValid(int n){
-        if(n >= 10 && n<=1000){
-            return true;
-        }
-        return false;
+        return n >= 10 && n <= 1000;
     }
     public static boolean hasSameLastDigit(int n1,int n2,int n3){
         if(!isValid(n1) || !isValid(n2) || !isValid(n3)){
@@ -292,10 +283,7 @@ public class Main {
         int lD2 = n2%10;
         int lD3 = n3%10;
 
-        if((lD1 == lD2) || (lD2 == lD3) || (lD1 == lD3)){
-            return true;
-        }
-        return false;
+        return (lD1 == lD2) || (lD2 == lD3) || (lD1 == lD3);
     }
     public static boolean hasSharedDigit(int n1, int n2){
         if(!(n1 >= 10 && n1<=99) || !(n2 >= 10 && n2<=99)){
@@ -350,10 +338,7 @@ public class Main {
             reverseNumber += lastDigit;
             number/=10;
         }
-        if(reverseNumber == checkNumber){
-            return true;
-        }
-        return false;
+        return reverseNumber == checkNumber;
     }
 
     public static int digitSum(int number) {
@@ -362,7 +347,7 @@ public class Main {
         }
         int sum = 0;
         while(number > 0){
-            int leastDigit = (int)number%10;
+            int leastDigit = number %10;
             sum+=leastDigit;
             number/=10;
         }
@@ -474,11 +459,7 @@ public class Main {
         }
         if (year % 4 == 0) {
             if (year % 100 == 0) {
-                if (year % 400 == 0) {
-                    return true;
-                } else {
-                    return false;
-                }
+                return year % 400 == 0;
             } else {
                 return true;
             }
@@ -545,10 +526,7 @@ public class Main {
     }
 
     public static boolean isOdd(int number){
-        if(number%2 == 0 || number <= 0){
-            return false;
-        }
-        return true;
+        return number % 2 != 0 && number > 0;
     }
     public static int sumOdd(int start, int end){
         if(!(end >= start) || !(start > 0 && end > 0)){

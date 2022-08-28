@@ -38,10 +38,10 @@ class HealthyBurger extends Hamburger{
 }
 
 public class Hamburger {
-    private String name;
-    private String meat;
-    private double price;
-    private String breadRollType;
+    private final String name;
+    private final String meat;
+    private final double price;
+    private final String breadRollType;
 
     private String addition1Name;
     private double addition1Price;

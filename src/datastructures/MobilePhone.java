@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class MobilePhone {
 
-    private static ArrayList<Contact> mobileContacts = new ArrayList<Contact>();
+    private static final ArrayList<Contact> mobileContacts = new ArrayList<Contact>();
 
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         printInstructions();
         boolean quit = false;

@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Main {
 
-    private static ArrayList<Album> albums = new ArrayList<>();
+    private static final ArrayList<Album> albums = new ArrayList<>();
 
     public static void main(String[] args) {
 //        linkedList();

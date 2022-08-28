@@ -74,6 +74,6 @@ public class Streams {
             }
         });
         System.out.println(i);
-        System.out.println(gNum.toString());
+        System.out.println(gNum);
     }
 }

@@ -18,9 +18,7 @@ public class Main {
     }
 
     private static void removeList(List<String> listA) {
-        if(listA.contains("A")){
-            listA.remove("A");
-        }
+      listA.remove("A");
     }
 
     private static int getEAFP() {

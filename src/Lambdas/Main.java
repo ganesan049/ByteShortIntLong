@@ -98,6 +98,6 @@ public class Main {
 
 
 interface UpperConcat {
-    public String upperAndConcat(String s1, String s2);
+    String upperAndConcat(String s1, String s2);
 }
 

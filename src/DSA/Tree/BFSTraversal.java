@@ -4,9 +4,9 @@ import java.io.*;
 import java.util.*;
 public class BFSTraversal
 {
-    private int node;       /* total number number of nodes in the graph */
-    private LinkedList<Integer> adj[];      /* adjacency list */
-    private Queue<Integer> que;           /* maintaining a queue */
+    private final int node;       /* total number number of nodes in the graph */
+    private final LinkedList<Integer>[] adj;      /* adjacency list */
+    private final Queue<Integer> que;           /* maintaining a queue */
     BFSTraversal(int v)
     {
         node = v;
@@ -23,7 +23,7 @@ public class BFSTraversal
     }
     void BFS(int n)
     {
-        boolean nodes[] = new boolean[node];       /* initialize boolean array for holding the data */
+        boolean[] nodes = new boolean[node];       /* initialize boolean array for holding the data */
         int a = 0;
         nodes[n]=true;
         que.add(n);       /* root node is added to the top of the queue */
@@ -42,7 +42,7 @@ public class BFSTraversal
             }
         }
     }
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         BFSTraversal graph = new BFSTraversal(6);
         graph.insertEdge(0, 1);

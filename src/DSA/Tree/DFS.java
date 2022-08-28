@@ -3,9 +3,9 @@ package DSA.Tree;
 import java.util.*;
 
 class Graph{
-    private boolean visited[];
-    private LinkedList<Integer> adjLists[];
-    private Queue<Integer> que;
+    private final boolean[] visited;
+    private final LinkedList<Integer>[] adjLists;
+    private final Queue<Integer> que;
     public Graph(int vertices) {
         adjLists = new LinkedList[vertices];
         que = new LinkedList<Integer>();

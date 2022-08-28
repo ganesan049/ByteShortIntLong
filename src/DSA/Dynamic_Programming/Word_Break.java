@@ -42,9 +42,6 @@ public class Word_Break {
                 }
             }
         }
-        if(matchCount == s.length()){
-            return  true;
-        }
-        return false;
+        return matchCount == s.length();
     }
 }

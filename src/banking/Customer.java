@@ -3,8 +3,8 @@ package banking;
 import java.util.ArrayList;
 
 public class Customer {
-    private String name;
-    private ArrayList<Double> transactions;
+    private final String name;
+    private final ArrayList<Double> transactions;
 
     public String getName() {
         return name;

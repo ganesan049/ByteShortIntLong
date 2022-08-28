@@ -8,7 +8,7 @@ public class Main {
         Player tim = new Player("Tim",10,15);
 //        String value = "10";
 //        System.out.println(Integer.valueOf(value));
-        System.out.println(tim.toString());
+        System.out.println(tim);
         saveObject(tim);
         tim.setHitPoints(8);
         System.out.println(tim);

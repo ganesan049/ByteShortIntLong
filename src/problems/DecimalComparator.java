@@ -11,10 +11,6 @@ public class DecimalComparator {
         s2 = Math.abs(n2);
         int rs1 = (int) (s1 * 1000);
         int rs2 = (int) (s2 * 1000);
-        if (rs1 == rs2) {
-            return true;
-        } else {
-            return false;
-        }
+        return rs1 == rs2;
     }
 }

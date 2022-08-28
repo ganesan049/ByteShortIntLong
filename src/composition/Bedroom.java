@@ -1,14 +1,14 @@
 package composition;
 
 public class Bedroom {
-    private Wall wall1;
-    private Wall wall2;
-    private Wall wall3;
-    private Wall wall4;
-    private String name;
-    private Ceiling ceiling;
-    private Bed bed;
-    private Lamp lamp;
+    private final Wall wall1;
+    private final Wall wall2;
+    private final Wall wall3;
+    private final Wall wall4;
+    private final String name;
+    private final Ceiling ceiling;
+    private final Bed bed;
+    private final Lamp lamp;
 
     public Lamp getLamp() {
         return lamp;

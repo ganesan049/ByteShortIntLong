@@ -3,7 +3,7 @@ package Collections;
 import java.util.*;
 
 public class Main {
-    private static Map<Integer,Location> locations = new HashMap<Integer, Location>();
+    private static final Map<Integer,Location> locations = new HashMap<Integer, Location>();
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         locations.put(0,new Location(0,"Start"));

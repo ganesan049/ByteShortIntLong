@@ -3,13 +3,13 @@ package Generics;
 import java.util.ArrayList;
 
 public class Team<T extends Player> implements Comparable<Team<T>>{
-    private String name;
+    private final String name;
     int won;
     int loss;
     int tied;
     int played;
 
-    private ArrayList<T> members = new ArrayList<>();
+    private final ArrayList<T> members = new ArrayList<>();
 
     public Team(String name) {
         this.name = name;

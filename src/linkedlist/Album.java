@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Album {
-    private ArrayList<Song> songs;
-    private String name;
-    private String artist;
+    private final ArrayList<Song> songs;
+    private final String name;
+    private final String artist;
 
     public Album(String name, String artist) {
         this.songs = new ArrayList<Song>();
